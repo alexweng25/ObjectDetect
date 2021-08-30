@@ -1,8 +1,8 @@
 # Object Detection
 
-商品辨識利用BoW(SURFT+Clusting)+SVM
-主要利用SURF對影像進行特徵擷取，接著使用BOVW進行資料降維建立物件特徵模型(Bag Of Visual Word)，BOVW主要採用K-Means進行特徵分群。
-接著使用SVM進行分類器的訓練，分類器採一對多進行訓練(SVC裡面有一個參數為decision_function_shape : ‘ovo’, ‘ovr’, default=’ovr’, ovr 就是採一對多方式)
+採用BoW(SURFT+Clusting)+SVM(Support Vector Machine)方式進行物件辨識。
+先行對影像進行SURFT特徵擷取，接著使用BOVW進行資料降維建立物件特徵模型(Bag Of Visual Word)，BOVW主要採用K-Means進行特徵分群。
+最後使用SVM進行分類器的訓練，分類器採一對多進行訓練(SVC裡面有一個參數為decision_function_shape : ‘ovo’, ‘ovr’, default=’ovr’, ovr 就是採一對多方式)
 
 - [ ] train_svm.py為訓練模型檔案，利用GridSearchCV找尋SVM的最佳參數
 - [ ] test_svm.py為辨識影像檔案
