@@ -10,4 +10,4 @@
 - [ ] BOWCluster.pkl為BOW分群演算法的模型存檔
 - [ ] image-augmentation-with-opencv.py為影像增強的檔案。目的是為了解決物件旋轉問題。
 
-在TEST的資料夾內我放置的都是各類別的全部檔案，分別進行測試。你們可以改test_svm.py把全部檔案一起進行測試。
+在TEST的資料夾內我放置的都是各類別的全部檔案，分別進行測試。可以改test_svm.py把全部檔案一起進行測試。
